@@ -135,6 +135,8 @@ set tabstop=4
 set expandtab
 set autoindent 
 syntax on
+:set encoding=utf-8
+:set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 "colorscheme molokai
 colorscheme jellybeans
 set t_Co=256
