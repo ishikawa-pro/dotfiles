@@ -78,10 +78,14 @@ let g:rsenseHome = expand("/Users/akira/.rbenv/shims/rsense")
 let g:rsenseUseOmniFunc = 1
 
  "----------------------------------------------ruby コード補完プラグイン
- 
 
 
 
+ "ディレクトリツリーの表示Nerdtree
+ NeoBundle 'scrooloose/nerdtree'
+ "ctrl+eでnerdtreeを開く
+ nnoremap <silent><C-e> :NERDTreeToggle<CR>
+ NeoBundle 'kana/vim-submode'
  NeoBundleFetch 'Shougo/neobundle.vim'
  NeoBundle 'moll/vim-node'
  NeoBundle 'mattn/jscomplete-vim'
@@ -98,7 +102,7 @@ if !exists('g:neocomplcache_omni_functions')
 "カラースキームの変更（jellybeans)
 "NeoBundle 'nanotech/jellybeans.vim'
 "NeoBundle 'tomasr/molokai'
-"インデントの深さを視覚化  	
+"インデントの深さを視覚化
 NeoBundle 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_guide_size=1
@@ -133,11 +137,21 @@ NeoBundle 'tpope/vim-rails'
 set number
 set tabstop=4
 set expandtab
-set autoindent 
+set autoindent
+set mouse=a
 syntax on
 "colorscheme molokai
 colorscheme jellybeans
 set t_Co=256
 let g:jellybeans_use_lowcolor_black = 0
+"保存時に空白を削除
+autocmd BufWritePre * :%s/\s\+$//ge
 
-
+call submode#enter_with('bufmove', 'n', '', '<C-l>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', '<C-h>', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', '<C-k>', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', '<C-j>', '<C-w>-')
+call submode#map('bufmove', 'n', '', 'l', '<C-w>>')
+call submode#map('bufmove', 'n', '', 'h', '<C-w><')
+call submode#map('bufmove', 'n', '', 'k', '<C-w>+')
+call submode#map('bufmove', 'n', '', 'j', '<C-w>-')
