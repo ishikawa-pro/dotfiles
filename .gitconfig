@@ -1,0 +1,8 @@
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+[user]
+    name = ishikawa-pro
+    email = ishikawa.pro@gmail.comm
