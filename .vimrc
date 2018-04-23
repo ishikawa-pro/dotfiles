@@ -148,6 +148,8 @@ set t_Co=256
 let g:jellybeans_use_lowcolor_black = 0
 "保存時に空白を削除
 autocmd BufWritePre * :%s/\s\+$//ge
+"新規tabをコマンド<C-w> + tに変更
+nnoremap <silent><C-w>t :tabnew<CR>
 
 call submode#enter_with('bufmove', 'n', '', '<C-l>', '<C-w>>')
 call submode#enter_with('bufmove', 'n', '', '<C-h>', '<C-w><')
