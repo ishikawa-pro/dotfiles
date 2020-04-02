@@ -84,7 +84,7 @@ let g:rsenseUseOmniFunc = 1
  "ディレクトリツリーの表示Nerdtree
  NeoBundle 'scrooloose/nerdtree'
  "ctrl+eでnerdtreeを開く
- nnoremap <silent><C-e> :NERDTreeToggle<CR>
+ nnoremap <silent><S-e> :NERDTreeToggle<CR>
  NeoBundle 'kana/vim-submode'
  NeoBundleFetch 'Shougo/neobundle.vim'
  NeoBundle 'moll/vim-node'
