@@ -118,9 +118,6 @@ NeoBundle 'tpope/vim-rails'
  au FileType javascript set dictionary+=~/.vim/bundle/vim-node-dict/dict/node.dict
  NeoBundle 'Townk/vim-autoclose'
 
-"Powerline
-set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
-NeoBundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 " 常にステータスラインを表示
 set laststatus=2
 " 256色対応
