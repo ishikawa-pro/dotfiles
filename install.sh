@@ -11,6 +11,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #tmuxとMacのクリップボードを共有するため
 brew install reattach-to-user-namespace
 
-echo "install tig"
-brew install tig
+echo "install various tools"
+brew install tig jq bat
 

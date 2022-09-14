@@ -139,7 +139,7 @@ set t_Co=254
 
 "set background=dark
 set number
-set tabstop=4
+set tabstop=2
 set expandtab
 set autoindent
 set mouse=a

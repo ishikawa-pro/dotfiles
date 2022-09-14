@@ -3,6 +3,7 @@
     ci = commit
     br = branch
     co = checkout
+    fixit = commit --amend --no-edit
 [user]
-    name = ishikawa-pro
-    email = ishikawa.pro@gmail.comm
+	name = ishikawa-pro
+	email = ishikawa.pro@gmail.com
