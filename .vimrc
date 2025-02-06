@@ -107,13 +107,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_guide_size=1
 
-" Ruby向けにendを自動挿入してくれる
-NeoBundle 'tpope/vim-endwise'
 
-" Rails向けのコマンドを提供する
-NeoBundle 'tpope/vim-rails'
-
- NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
  NeoBundle 'guileen/vim-node-dict'
  au FileType javascript set dictionary+=~/.vim/bundle/vim-node-dict/dict/node.dict
  NeoBundle 'Townk/vim-autoclose'

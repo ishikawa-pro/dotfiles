@@ -1,7 +1,6 @@
 #lsの結果をカラーにする
 alias ls='ls -G'
-##lsの色をシアンにする。
-export LSCOLORS=gxfxcxdxbxegedabagacad
+##lsの色をシアンにする�export LSCOLORS=gxfxcxdxbxegedabagacad
 export PS1='\W $ '
 
 autoload -Uz compinit && compinit
@@ -16,5 +15,11 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%b'
 
 
-# PROMPT='%~
-# $ '
+alias pr-create='gh pr create -w'
+alias pr-open='gh pr view -w'
+
+alias llm-branch-name='git diff --staged | llm -s "Please create git branch name from git diff. output is only branch name"'
+alias llm-branch-create='git diff --staged | llm -s "Please create git branch name from git diff. output is only branch name" | xargs git co -b'
+
+
+
