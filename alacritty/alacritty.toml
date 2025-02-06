@@ -1,0 +1,9 @@
+[[keyboard.bindings]]
+chars = '\'
+key = "Backslash"
+mods = "Alt"
+
+[font]
+size = 16.0
+
+[keyboard]
