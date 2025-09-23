@@ -9,4 +9,4 @@ ln -sf $PWD/.gitconfig ~/.gitconfig
 # ln -sf $PWD/.bash_profile ~/.bash_profile
 ln -sf $PWD/.zshrc ~/.zshrc
 ln -sf $PWD/.zprofile ~/.zprofile
-ln -sf $PWD/.config/alacritty ~/.config/alacritty
+ln -sf $PWD/alacritty ~/.config/alacritty
