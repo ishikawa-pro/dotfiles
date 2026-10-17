@@ -1,0 +1,33 @@
+" プラグインなしの最小限の Vim 設定
+" 普段は Neovim (LazyVim) を使う。nvim が無い環境で vim を開いたとき用
+
+set nocompatible
+filetype plugin indent on
+syntax on
+
+set encoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
+
+set number
+" 常にステータスラインを表示
+set laststatus=2
+set mouse=a
+set backspace=indent,eol,start
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set autoindent
+
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+set background=dark
+silent! colorscheme habamax
+
+"保存時に空白を削除
+autocmd BufWritePre * :%s/\s\+$//ge
+"新規tabをコマンド<C-w> + tに変更
+nnoremap <silent><C-w>t :tabnew<CR>

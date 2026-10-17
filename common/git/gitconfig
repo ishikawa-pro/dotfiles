@@ -1,0 +1,14 @@
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    fixit = commit --amend --no-edit
+[user]
+	name = ishikawa-pro
+	# email は ~/.gitconfig.local に書く
+[core]
+	editor = nvim
+[include]
+	# マシン固有の設定 (Git 管理外)
+	path = ~/.gitconfig.local

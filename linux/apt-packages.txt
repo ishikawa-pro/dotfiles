@@ -1,0 +1,15 @@
+# setup.sh / mise / LazyVim が必要とするもの
+git
+curl
+unzip
+build-essential
+
+# よく使うツール
+tmux
+vim
+tig
+jq
+# Ubuntu ではコマンド名が batcat になる
+bat
+gh
+wl-clipboard

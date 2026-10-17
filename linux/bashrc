@@ -1,0 +1,8 @@
+# Linux 用 bashrc (Ubuntu 既定の ~/.bashrc の末尾から読み込まれる)
+
+DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+. "$DOTFILES/common/shell/env.sh"
+. "$DOTFILES/common/shell/aliases.sh"
+
+# マシン固有の設定 (Git 管理外)
+[ -f ~/.bashrc.local ] && . ~/.bashrc.local
