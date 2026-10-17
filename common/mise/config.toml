@@ -1,0 +1,11 @@
+[tools]
+node = "lts"
+"npm:@marp-team/marp-cli" = "latest"
+"npm:@openai/codex" = "latest"
+
+# Neovim (LazyVim) とその外部依存
+neovim = "stable"
+ripgrep = "latest"
+fd = "latest"
+fzf = "latest"
+lazygit = "latest"

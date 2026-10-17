@@ -1,0 +1,8 @@
+brew "tmux"
+# tmux と Mac のクリップボードを共有するため
+brew "reattach-to-user-namespace"
+
+brew "tig"
+brew "jq"
+brew "bat"
+brew "gh"

@@ -1,0 +1,24 @@
+# macOS 用 zshrc (~/.zshrc としてリンクされる)
+
+DOTFILES="${${(%):-%x}:A:h:h}"
+. "$DOTFILES/common/shell/env.sh"
+. "$DOTFILES/common/shell/aliases.sh"
+
+#lsの結果をカラーにする
+alias ls='ls -G'
+#lsの色をシアンにする
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
+autoload -Uz compinit && compinit
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+PROMPT='%~ $ '
+RPROMPT=\$vcs_info_msg_0_
+# PROMPT=\$vcs_info_msg_0_'%# '
+zstyle ':vcs_info:git:*' formats '%b'
+
+# マシン固有の設定 (Git 管理外)
+[ -f ~/.zshrc.local ] && . ~/.zshrc.local
